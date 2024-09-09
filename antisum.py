@@ -1,4 +1,4 @@
-def find_combinations(m, start=1):
+def antisum(m, start=1):
     if m == 0:
         return [[]]
     
