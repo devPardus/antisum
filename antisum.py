@@ -4,7 +4,7 @@ def antisum(m, start=1):
     
     combinations = []
     for i in range(start, m + 1):
-        for sub_combination in find_combinations(m - i, i + 1):
+        for sub_combination in antisum(m - i, i + 1):
             combinations.append([i] + sub_combination)
     
     return combinations
